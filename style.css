@@ -1,0 +1,141 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  } 
+   
+  body, html { 
+    font-family: 'Segoe UI', sans-serif; 
+    background: #f9f9f9; 
+    color: #333; 
+    scroll-behavior: smooth; 
+  } 
+   
+  .container { 
+    max-width: 1100px; 
+    margin: auto; 
+    padding: 20px;
+    
+    & h1{
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+  } 
+   
+  header { 
+    background: #222e3d; 
+    color: #fff; 
+    padding: 15px 0; 
+  } 
+   
+  header h1 { 
+    float: left; 
+    margin-left: 20px; 
+  } 
+   
+  nav ul { 
+    float: right; 
+    list-style: none; 
+  } 
+   
+  nav ul li { 
+    display: inline-block; 
+    margin: 0 15px; 
+  } 
+   
+  nav ul li a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+  } 
+   
+  .hero { 
+    background: #e3f2fd; 
+    padding: 60px 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+  } 
+   
+  .hero-content { 
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    gap: 30px; 
+  } 
+   
+  .hero-text { 
+    flex: 1; 
+  } 
+   
+  .hero-text h2 { 
+    font-size: 2.5em; 
+    color: #1876d2; 
+  } 
+   
+  .hero img { 
+    width: 250px; 
+    border-radius: 50%; 
+    border: 5px solid #1976d8; 
+  } 
+   
+  .section { 
+    padding: 60px 0; 
+  } 
+   
+  .skills-list { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+    list-style: none; 
+    padding: 0; 
+  } 
+   
+  .skills-list li { 
+    background: #1956d2; 
+    color: white; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+  } 
+   
+  .projects-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+  } 
+   
+  .project-card { 
+    background: white; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+  } 
+   
+  footer { 
+    text-align: center; 
+    padding: 20px 0; 
+    background: #222; 
+    color: white; 
+    margin-top: 40px; 
+  } 
+   
+  @media (max-width: 768px) { 
+    .hero-content { 
+      flex-direction: column; 
+      text-align: center; 
+    } 
+   
+    .projects-grid { 
+      grid-template-columns: 1fr; 
+    } 
+   
+    header h1, nav ul { 
+      float: none; 
+      text-align: center; 
+    } 
+   
+    nav ul li { 
+  display: block; 
+  margin: 10px 0; 
+  } 
+  } 
